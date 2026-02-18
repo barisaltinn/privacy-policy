@@ -12,40 +12,57 @@
 
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #f8fafc;
-            color: #1e293b;
+            background: #0a0a0f;
+            color: #e2e8f0;
             line-height: 1.7;
             -webkit-font-smoothing: antialiased;
         }
 
         .header {
-            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+            background: linear-gradient(180deg, #13131a 0%, #0a0a0f 100%);
             color: white;
-            padding: 48px 24px 40px;
+            padding: 60px 24px 48px;
             text-align: center;
+            border-bottom: 1px solid rgba(255,255,255,0.06);
         }
 
-        .header-logo {
-            display: none;
+        .header-badge {
+            display: inline-block;
+            padding: 6px 16px;
+            background: rgba(139, 92, 246, 0.15);
+            border: 1px solid rgba(139, 92, 246, 0.25);
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            color: #a78bfa;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 20px;
         }
 
         .header h1 {
-            font-size: 28px;
+            font-size: 32px;
             font-weight: 800;
             letter-spacing: -0.5px;
-            margin-bottom: 8px;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #ffffff 0%, #a78bfa 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
         .header .subtitle {
-            font-size: 14px;
-            opacity: 0.85;
+            font-size: 15px;
+            color: #64748b;
             font-weight: 500;
         }
 
         .header .date {
-            font-size: 13px;
-            opacity: 0.7;
-            margin-top: 12px;
+            font-size: 12px;
+            color: #475569;
+            margin-top: 16px;
+            font-weight: 500;
+            letter-spacing: 0.3px;
         }
 
         .container {
@@ -55,22 +72,22 @@
         }
 
         .disclaimer {
-            background: #fff3cd;
-            border: 1px solid #ffeeba;
+            background: rgba(234, 179, 8, 0.08);
+            border: 1px solid rgba(234, 179, 8, 0.2);
             border-radius: 12px;
             padding: 20px 24px;
             margin-bottom: 32px;
         }
 
         .disclaimer h3 {
-            color: #856404;
-            font-size: 16px;
+            color: #facc15;
+            font-size: 15px;
             font-weight: 700;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
         }
 
         .disclaimer p {
-            color: #856404;
+            color: #d4a017;
             font-size: 14px;
             line-height: 1.6;
             margin-bottom: 6px;
@@ -79,29 +96,29 @@
         .disclaimer p:last-child { margin-bottom: 0; }
 
         .important-box {
-            background: #eef2ff;
-            border-left: 4px solid #4f46e5;
+            background: rgba(139, 92, 246, 0.08);
+            border-left: 3px solid #8b5cf6;
             border-radius: 0 8px 8px 0;
             padding: 16px 20px;
             margin-bottom: 32px;
             font-size: 14px;
-            color: #3730a3;
+            color: #c4b5fd;
         }
 
         h2 {
-            font-size: 22px;
+            font-size: 20px;
             font-weight: 800;
-            color: #0f172a;
+            color: #f8fafc;
             margin-top: 40px;
             margin-bottom: 16px;
             padding-bottom: 10px;
-            border-bottom: 2px solid #e2e8f0;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
         }
 
         h3 {
-            font-size: 17px;
+            font-size: 16px;
             font-weight: 700;
-            color: #1e293b;
+            color: #cbd5e1;
             margin-top: 28px;
             margin-bottom: 12px;
         }
@@ -109,10 +126,10 @@
         p {
             margin-bottom: 14px;
             font-size: 15px;
-            color: #334155;
+            color: #94a3b8;
         }
 
-        strong { color: #0f172a; font-weight: 700; }
+        strong { color: #e2e8f0; font-weight: 700; }
 
         ul, ol {
             padding-left: 24px;
@@ -122,53 +139,53 @@
         li {
             margin-bottom: 8px;
             font-size: 15px;
-            color: #334155;
+            color: #94a3b8;
         }
 
         hr {
             border: none;
             height: 1px;
-            background: #e2e8f0;
+            background: rgba(255,255,255,0.06);
             margin: 36px 0;
         }
 
         .footer {
             text-align: center;
             padding: 32px 20px;
-            border-top: 1px solid #e2e8f0;
+            border-top: 1px solid rgba(255,255,255,0.06);
             margin-top: 48px;
         }
 
         .footer p {
             font-size: 13px;
-            color: #94a3b8;
+            color: #475569;
         }
 
         .footer .compliance {
             font-style: italic;
             font-size: 12px;
-            color: #cbd5e1;
+            color: #334155;
             margin-top: 12px;
         }
 
-        a { color: #4f46e5; text-decoration: none; }
+        a { color: #a78bfa; text-decoration: none; }
         a:hover { text-decoration: underline; }
 
         @media (max-width: 480px) {
-            .header { padding: 32px 16px 28px; }
-            .header h1 { font-size: 22px; }
+            .header { padding: 48px 16px 36px; }
+            .header h1 { font-size: 26px; }
             .container { padding: 24px 16px 48px; }
-            h2 { font-size: 19px; }
-            h3 { font-size: 16px; }
+            h2 { font-size: 18px; }
+            h3 { font-size: 15px; }
         }
     </style>
 </head>
 <body>
 
 <div class="header">
-
-    <h1>Privy — Terms of Service</h1>
-    <div class="subtitle">Personality Analysis & Social Discovery</div>
+    <div class="header-badge">Legal</div>
+    <h1>Terms of Service</h1>
+    <div class="subtitle">Privy · Personality Analysis & Social Discovery</div>
     <div class="date">Last Updated: February 18, 2026 · Effective Date: February 18, 2026</div>
 </div>
 
