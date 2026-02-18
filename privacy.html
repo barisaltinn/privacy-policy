@@ -1,428 +1,661 @@
-# PRIVY — PRIVACY POLICY
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privy — Privacy Policy</title>
+    <meta name="description" content="Privy Privacy Policy — how we collect, process, store, and protect your personal data.">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
-**Last Updated:** February 18, 2026
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
-**Effective Date:** February 18, 2026
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f8fafc;
+            color: #1e293b;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
 
-<div style="background-color: #fff3cd; color: #856404; padding: 20px; border: 1px solid #ffeeba; border-radius: 8px; margin-bottom: 20px;">
-    <h3 style="margin-top: 0; color: #856404;">⚠️ IMPORTANT LEGAL DISCLAIMER</h3>
-    <p><strong>Privy is not a medical device.</strong></p>
-    <p>The personality analyses, archetypes, social comparisons, and results provided through this application are intended solely for <strong>entertainment, social interaction, and personal awareness</strong> purposes. The application's content does not substitute for professional psychological counseling, clinical diagnosis, treatment, or medical advice and should not be used for such purposes.</p>
-    <p>Privy is a platform where users share their <em>subjective opinions</em> about people in their social circles and engage in "social discovery" through algorithmic patterns.</p>
+        .header {
+            background: linear-gradient(135deg, #059669 0%, #0d9488 100%);
+            color: white;
+            padding: 48px 24px 40px;
+            text-align: center;
+        }
+
+        .header-logo {
+            font-size: 36px;
+            margin-bottom: 8px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+        }
+
+        .header .subtitle {
+            font-size: 14px;
+            opacity: 0.85;
+            font-weight: 500;
+        }
+
+        .header .date {
+            font-size: 13px;
+            opacity: 0.7;
+            margin-top: 12px;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 32px 20px 60px;
+        }
+
+        .disclaimer {
+            background: #fff3cd;
+            border: 1px solid #ffeeba;
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin-bottom: 32px;
+        }
+
+        .disclaimer h3 {
+            color: #856404;
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .disclaimer p {
+            color: #856404;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 6px;
+        }
+
+        .disclaimer p:last-child { margin-bottom: 0; }
+
+        h2 {
+            font-size: 22px;
+            font-weight: 800;
+            color: #0f172a;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+        h3 {
+            font-size: 17px;
+            font-weight: 700;
+            color: #1e293b;
+            margin-top: 28px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            margin-bottom: 14px;
+            font-size: 15px;
+            color: #334155;
+        }
+
+        strong { color: #0f172a; font-weight: 700; }
+        em { font-style: italic; }
+
+        ul, ol {
+            padding-left: 24px;
+            margin-bottom: 16px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            font-size: 15px;
+            color: #334155;
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            background: #e2e8f0;
+            margin: 36px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            font-size: 14px;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+        }
+
+        thead { background: #f1f5f9; }
+
+        th {
+            text-align: left;
+            padding: 12px 14px;
+            font-weight: 700;
+            color: #0f172a;
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+        td {
+            padding: 12px 14px;
+            border-bottom: 1px solid #f1f5f9;
+            color: #334155;
+            vertical-align: top;
+        }
+
+        tr:last-child td { border-bottom: none; }
+
+        .note-box {
+            background: #f0fdf4;
+            border-left: 4px solid #059669;
+            border-radius: 0 8px 8px 0;
+            padding: 16px 20px;
+            margin: 16px 0;
+            font-size: 14px;
+            color: #065f46;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 32px 20px;
+            border-top: 1px solid #e2e8f0;
+            margin-top: 48px;
+        }
+
+        .footer p {
+            font-size: 13px;
+            color: #94a3b8;
+        }
+
+        .footer .compliance {
+            font-style: italic;
+            font-size: 12px;
+            color: #cbd5e1;
+            margin-top: 12px;
+        }
+
+        a { color: #059669; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        @media (max-width: 480px) {
+            .header { padding: 32px 16px 28px; }
+            .header h1 { font-size: 22px; }
+            .container { padding: 24px 16px 48px; }
+            h2 { font-size: 19px; }
+            h3 { font-size: 16px; }
+            table { font-size: 13px; }
+            th, td { padding: 10px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <div class="header-logo">🛡️</div>
+    <h1>Privy — Privacy Policy</h1>
+    <div class="subtitle">How We Protect Your Data</div>
+    <div class="date">Last Updated: February 18, 2026 · Effective Date: February 18, 2026</div>
 </div>
 
----
-
-## 1. INTRODUCTION
-
-Privy ("Application", "we", "us", "our") is a social discovery and interaction platform developed by Barış Altın, designed to help people discover the characteristics they are curious about regarding people in their social circles, share their impressions of each other, and transform relationship dynamics into an entertaining, viral experience. This Privacy Policy explains how your personal data is collected, processed, stored, shared, and protected when you use the Application.
-
-This Privacy Policy has been prepared in compliance with the Turkish Personal Data Protection Law No. 6698 (KVKK), the principles of the European Union General Data Protection Regulation (GDPR), Apple App Store Review Guidelines (Section 5.1), and Google Play Developer Policy (User Data policy) requirements.
-
-By using the Application, you represent that you have read, understood, and accepted this Privacy Policy.
-
----
-
-## 2. DATA CONTROLLER
-
-**Data Controller:** Barış Altın
-📧 Email: privacy@privy-app.com
-📍 Country: Turkey
-
-You may contact us using the information above for any questions, requests, or complaints regarding the processing of your personal data.
-
----
-
-## 3. DATA COLLECTED
-
-### 3.1 Data Collected Directly from You
-
-| Data Category | Data Collected | Purpose |
-|---|---|---|
-| **Account Information** | Name/surname, email address, profile photo (via Google or Apple Sign-In) | Account creation and authentication |
-| **Profile Information** | Display name, profile photo (optional change), friend code | In-app profile and social features |
-| **Personality Analysis Data** | **Analysis Subject Label:** A symbolic nickname or label assigned by the User in their own mind to identify the analysis account (This data is not based on a real person's identity verification). <br> **Trait Ratings:** Subjective evaluation scores ranging from 1-20. | Creating personality analysis reports and profile differentiation |
-| **Circle Data** | Circle connections, friend code sharing, mutual/transparent analysis preferences | Social connection and circle features |
-| **Partner Matching Data** | Invitation codes, invitation statuses, matching information | Partner matching feature |
-| **Discovery Data** | Answers to daily discovery questions, streak tracking | Enriching analysis profiles |
-| **Notification Preferences** | Push notification permission, notification token | Notification services |
-| **Reporting Data** | Reported content, report reason, description | Content moderation and user safety |
-| **Purchase Data** | Credit purchase history, transaction records | Credit system management |
-
-### 3.2 Automatically Collected Data
-
-| Data Category | Data Collected | Purpose |
-|---|---|---|
-| **Device Identifiers** | IDFV (iOS) or Android ID, platform information (iOS/Android) | Preventing welcome bonus abuse |
-| **Application Usage Data** | Session duration, feature usage frequency, error logs | Improving service quality |
-| **IP Address** | Connection IP address (in server logs) | Security and abuse prevention |
-
-### 3.3 Data We Do Not Collect
-
-For the sake of transparency, we **do not collect** the following data:
-
-- ❌ Location data (GPS, Wi-Fi location detection, etc.)
-- ❌ Contacts/address book information
-- ❌ Call history or message contents
-- ❌ Health data
-- ❌ Financial information (credit card numbers, etc. — payment processing is managed by Apple/Google)
-- ❌ **Medical and Biometric Data:** Fingerprints, face scans, genetic data, or clinical health records are not collected. Personality analysis data is processed under the "User Content" category without any medical diagnostic purpose.
-- ❌ **Political, Philosophical, and Religious Data:** Special categories of personal data such as race, ethnicity, political opinion, philosophical belief, religion, sect or other beliefs, attire, association, foundation, or union membership are not collected. Analysis results do not profile based on these categories.
-- ❌ **Third-Party SDKs for Advertising Purposes:** The Application does not contain SDKs for ad display, behavioral tracking, or ad targeting (e.g., AdMob, Facebook Ads, Unity Ads). (Note: Services used for authentication, database, and technical infrastructure — Supabase, Expo, Google/Apple Auth — are excluded from this scope and are listed in the "Service Providers" section).
-
----
-
-## 4. PURPOSES AND LEGAL BASES FOR DATA PROCESSING
-
-### 4.1 Processing Purposes
-
-We process your personal data for the following purposes:
-
-| Purpose | Description | Legal Basis |
-|---|---|---|
-| **Service Provision** | Creating personality analysis reports, circle features, partner matching | Performance of contract |
-| **Account Management** | Account creation, authentication, profile management | Performance of contract |
-| **Security** | Detecting fake accounts, preventing welcome bonus abuse, blocking system | Legitimate interest |
-| **Content Moderation** | Reviewing reported content, ensuring compliance with community rules | Legitimate interest / Legal obligation |
-| **Notifications** | Mutual analysis results, circle requests, achievement notifications | Explicit consent |
-| **Improvement** | Improving service quality and user experience (analysis with anonymized data) | Legitimate interest |
-| **Legal Obligations** | Legal regulations and requests from authorized bodies | Legal obligation |
-
-### 4.2 Algorithmic Data Processing
-
-Privy processes the rating data entered by Users to create personality analysis reports. In this process:
-
-- **Input data:** Personality trait ratings containing the User's (the rater's) own **subjective opinions**, individual judgments, and personal evaluations of the analyzed person.
-- **Output:** Algorithmically generated personality analysis report (patterns, overall score, grade, archetype).
-- **Algorithm Method:** Analysis results are produced by a pattern recognition system based on predefined algorithms and rules.
-- **Data sharing:** Rating data is **not sent** to third-party artificial intelligence systems. All analysis operations are securely performed on our own servers.
-- **Automated Decision-Making:** The data processing procedure is fully automated, and there is no human intervention or manual review of the results.
-
-**Important:** Analysis results generated by algorithmic systems are for entertainment purposes and do not constitute a scientific assessment.
-
----
-
-## 5. DATA SHARING
-
-### 5.1 When Data Is Shared
-
-We **do not share** your personal data with third parties except in the following circumstances:
-
-| Sharing Scenario | Description |
-|---|---|
-| **In-App Sharing** | Mutual or transparent analysis results are shared only with the relevant Circle members. This sharing depends on your preferences (transparent/mutual mode selection). |
-| **Infrastructure and Server Services** | Supabase (Database) and Expo (Notification Service). To ensure uninterrupted service delivery on a global scale, your data may be stored in encrypted form on secure cloud servers located abroad (EU or US) that maintain high security standards. By using the Application, you are deemed to have consented to this technical transfer. |
-| **Authentication Providers** | Google Sign-In and Apple Sign-In are used for authentication purposes. Only the minimum necessary information (authentication token) is shared with these providers. |
-| **Legal Requirement** | We may be required to share your data pursuant to applicable laws, court orders, or requests from authorized bodies. |
-| **Transfer of Rights** | In the event of a company merger, acquisition, or asset sale, your personal data may be transferred to the acquiring party. Prior notice will be provided in such cases. |
-
-### 5.2 What We Never Share
-
-- ❌ We **do not sell** your data to third-party advertisers or data brokers.
-- ❌ We **do not share** your data with third parties for marketing purposes.
-- ❌ We **do not provide** your data to third-party AI or data sets.
-- ❌ We **do not publicly publish** your profile data without your explicit consent.
-
----
-
-## 6. DATA RETENTION
-
-### 6.1 Retention Periods
-
-| Data Type | Retention Period |
-|---|---|
-| **Account Data** | For as long as the account exists. (Data is retained for service continuity unless the User requests account deletion). |
-| **Analysis Data** | For as long as the account exists. (Immediately destroyed when the User deletes the report or account). |
-| **Circle Data** | For as long as the connection is active (deleted when the connection or account is deleted) |
-| **Device Fingerprints** | For as long as the account exists and, in cases of suspected fraud, for the duration of the legal statute of limitations (10 years). |
-| **Reporting Data** | For as long as the account is active and for the duration of the legal dispute statute of limitations (10 years) |
-| **Transaction Records** | 10 years pursuant to legal requirements and tax regulations |
-| **Server Logs** | 90 days |
-
-### 6.2 Post-Retention
-
-Data that has exceeded its retention period is permanently deleted automatically or within 30 days at the latest, or anonymized in an irreversible manner.
-
----
-
-## 7. DATA SECURITY
-
-We implement the following technical and administrative measures to ensure the security of your personal data:
-
-### 7.1 Technical Measures
-
-- **Encryption:** All data communication is encrypted with TLS 1.2+ (HTTPS). Sensitive data is encrypted server-side with AES-256.
-- **Authentication:** Secure session management based on JWT (JSON Web Token).
-- **Access Control:** Row Level Security (RLS) ensures each User can only access their own data.
-- **API Security:** All API requests are subject to authentication.
-
-### 7.2 Administrative Measures
-
-- Data access is limited to personnel who require it for their duties.
-- Regular security audits and updates are conducted.
-- In the event of a data breach, affected Users and authorized bodies are notified within the time period required by law.
-
-### 7.3 Data Breach Notification
-
-In the event that a security breach affecting your personal data is detected:
-
-- The relevant data protection authority will be notified within 72 hours of discovering the breach.
-- Affected Users will be notified as soon as possible via email and/or in-app notification.
-- The scope of the breach, measures taken, and recommended protective steps will be communicated.
-
----
-
-## 8. USER RIGHTS
-
-### 8.1 Your Rights Under KVKK
-
-You have the following rights pursuant to Article 11 of the Turkish Personal Data Protection Law No. 6698 (KVKK):
-
-1. **Right to Information:** To learn whether your personal data is being processed.
-2. **Right of Access:** To request information regarding the processing of your personal data.
-3. **Right to Rectification:** To request the correction of personal data if it has been processed incompletely or inaccurately.
-4. **Right to Erasure/Destruction:** To request the deletion or destruction of your personal data when the purpose for processing no longer exists.
-5. **Right to Object:** To object to results that arise against you through the exclusive analysis of processed data via automated systems.
-6. **Right to Compensation:** To seek compensation for damages arising from the unlawful processing of personal data.
-7. **Right to Data Portability:** To receive your personal data in a structured, commonly used, and machine-readable format.
-
-### 8.2 Additional Rights Under GDPR (EU/EEA Users)
-
-Additional rights for users residing in the European Union or European Economic Area:
-
-- **Right to Restrict Processing:** To restrict the processing of your data under certain conditions.
-- **Right to Object:** To object to data processing based on legitimate interests.
-- **Right to Object to Profiling:** To object to automated decision-making and profiling.
-- **Right to Lodge a Complaint:** To file a complaint with the data protection authority in your country.
-
-### 8.3 How to Exercise Your Rights
-
-To exercise the rights listed above:
-
-- **In-App:** You can permanently delete your account and all your data through Settings > Account > "Delete My Account."
-- **Email:** You may apply to privacy@privy-app.com. Your application will be responded to within 30 days at the latest.
-
-We may request additional information for identity verification purposes.
-
----
-
-## 9. ACCOUNT DELETION AND DATA REMOVAL
-
-### 9.1 Account Deletion
-
-You can delete your account at any time from within the Application:
-
-**Settings > Account > Delete My Account**
-
-### 9.2 Scope of Deletion
-
-When you delete your account, the following data is **permanently deleted**:
-
-- ✅ Your profile information (name, photo, friend code)
-- ✅ All personality analyses and ratings you have created
-- ✅ Your Circle connections and Circle analysis data
-- ✅ Your discovery answers and streak data
-- ✅ Your achievement progress
-- ✅ Your notification history
-- ✅ Your credit balance
-
-### 9.3 Data Retained After Deletion
-
-The following data may be retained for a limited period for legitimate purposes:
-
-- **Device fingerprint:** To prevent bonus abuse (anonymous device identifier only).
-- **Transaction records:** Due to legal requirements (financial audit).
-- **Reporting data:** Until active reviews are completed.
-
-### 9.4 Deletion Timeline
-
-Your data will be permanently deleted within 30 days after receiving your account deletion request. If you wish to recover your account within this period, you can contact us via email.
-
----
-
-## 10. CHILDREN'S PRIVACY
-
-### 10.1 Age Restriction
-
-Privy is designed for users over the age of 13. We do not knowingly collect personal data from children under the age of 13.
-
-### 10.2 Detection of Child Data
-
-If we discover that we have collected personal data from a user under the age of 13:
-
-- The relevant account will be immediately suspended.
-- All collected data will be deleted as soon as possible.
-- The legal guardian or custodian will be notified if available.
-
-### 10.3 Parent/Guardian Notification
-
-If you believe your child is under the age of 13 and is using the Application, please immediately contact us at privacy@privy-app.com.
-
----
-
-## 11. INTERNATIONAL DATA TRANSFERS
-
-### 11.1 Data Processing Location
-
-Your data is processed through the Supabase infrastructure. Supabase servers may be located in different regions. When your data is processed outside of Turkey, we ensure that appropriate security measures are in place.
-
-### 11.2 Security Measures
-
-For international data transfers:
-
-- Implementation of Standard Contractual Clauses (SCCs)
-- Ensuring an adequate level of data protection
-- Compliance with KVKK and applicable data protection legislation
-
----
-
-## 12. COOKIES AND TRACKING TECHNOLOGIES
-
-### 12.1 Mobile Application
-
-Privy is a mobile application and does not use traditional web cookies. However, we may use the following similar technologies:
-
-- **Device Identifiers:** IDFV (iOS) or Android ID — to prevent welcome bonus abuse.
-- **Push Token:** Expo push notification token — to send notifications.
-- **Session Tokens:** JWT-based secure session management. (These tokens are mandatory technical identifiers solely for the Application's operation and your security; they do not serve tracking or advertising purposes). — for secure authentication.
-
-### 12.2 Third-Party Tracking
-
-Privy **does not use** third-party ad tracking SDKs (Facebook SDK, Google Ads SDK, etc.). We do not track your user behavior for advertising purposes and do not collect your advertising identifier (IDFA/GAID).
-
----
-
-## 13. PUSH NOTIFICATIONS
-
-### 13.1 Notification Types
-
-Privy may send push notifications in the following situations:
-
-- When someone sends you a Circle request
-- When mutual analysis results are revealed
-- When your transparent analysis result is ready
-- When a new discovery question is available
-- Streak reminders
-
-### 13.2 Notification Control
-
-You can manage push notification permissions at any time from your device settings:
-
-- **iOS:** Settings > Notifications > Privy
-- **Android:** Settings > Apps > Privy > Notifications
-
-Disabling notifications does not affect the core functionality of the Application.
-
----
-
-## 14. APPLE AND GOOGLE SPECIFIC PRIVACY REQUIREMENTS
-
-### 14.1 Apple App Tracking Transparency (ATT)
-
-Privy **does not engage in tracking** under Apple's ATT framework. We do not access your device's advertising identifier (IDFA) and do not perform cross-app/website tracking.
-
-### 14.2 Apple Privacy Nutrition Label
-
-Our privacy label on the App Store reflects the following data collection categories:
-
-- **Data Linked to You:** Contact information (email), user content (analyses), identifiers (user ID)
-- **Data Not Linked to You:** Device identifiers (abuse prevention), usage data (anonymous error reports)
-
-### 14.3 Google Play Data Safety
-
-Our data safety section on the Google Play Store includes the following information:
-
-- **Data Collection:** Yes — account information, user content, device information
-- **Data Sharing:** No — data is not shared with third parties for marketing purposes
-- **Data Deletion:** Yes — users can delete their accounts and data from within the app
-- **Encryption:** Yes — encryption in transit (TLS)
-
----
-
-## 15. THIRD-PARTY SERVICE PROVIDERS
-
-We work with the following third-party service providers, and these providers may interact with your data:
-
-| Provider | Purpose | Data Processed | Privacy Policy |
-|---|---|---|---|
-| **Supabase** | Database, authentication, server functions | Account information, analysis data, application data | [supabase.com/privacy](https://supabase.com/privacy) |
-| **Google Sign-In** | Authentication | Google account token, name, email | [policies.google.com/privacy](https://policies.google.com/privacy) |
-| **Apple Sign-In** | Authentication | Apple ID token, name, email (hiding option available) | [apple.com/legal/privacy](https://www.apple.com/legal/privacy/) |
-| **Expo** | Push notifications, application distribution | Push token, device information | [expo.dev/privacy](https://expo.dev/privacy) |
-
-These providers process your data solely for the stated purposes and are subject to their own privacy policies.
-
-> **Note:** The service providers listed above act as **Data Processors** and process your data solely in accordance with our instructions, under contractual data protection safeguards (DPA).
-
----
-
-## 16. DATA PROTECTION IMPACT ASSESSMENT
-
-When adding new features or data processing activities, we conduct a Data Protection Impact Assessment (DPIA) to evaluate potential privacy risks. This assessment covers:
-
-- New data collection requirements
-- Data processing purposes and proportionality
-- Potential impacts on user rights
-- Risk mitigation measures
-
----
-
-## 17. REQUEST RESPONSE TIME
-
-Response times for personal data requests:
-
-| Request Type | Response Time |
-|---|---|
-| Information / Access | Within 30 days at the latest |
-| Rectification | Within 30 days at the latest |
-| Deletion (in-app) | Immediate (permanent deletion within 30 days) |
-| Deletion (email request) | Within 30 days at the latest |
-| Objection | Within 30 days at the latest |
-| Data portability | Within 30 days at the latest |
-
-In the case of complex or numerous requests, we may extend this period up to 60 days, provided we inform you.
-
----
-
-## 18. POLICY CHANGES
-
-We may update this Privacy Policy from time to time. In the event of significant changes:
-
-- We will send an in-app notification.
-- We will specify the effective date of the updated policy.
-- We will highlight and explain significant changes.
-
-Your continued use of the Application after the changes constitutes acceptance of the updated Privacy Policy.
-
----
-
-## 19. COMPLAINTS AND APPLICATIONS
-
-### 19.1 Contact Us
-
-For all complaints and applications regarding the processing of your personal data:
-
-📧 **Email:** privacy@privy-app.com
-
-All applications will be responded to within 30 days at the latest.
-
-### 19.2 Supervisory Authority
-
-If the outcome of your application is not satisfactory, you may apply to the following authorities:
-
-- **Turkey:** Personal Data Protection Authority (KVKK) — [kvkk.gov.tr](https://www.kvkk.gov.tr)
-- **EU/EEA:** The Data Protection Authority in your country
-
----
-
-## 20. CONTACT
-
-If you have any questions, concerns, or requests regarding this Privacy Policy:
-
-**Barış Altın**
-📧 Email: privacy@privy-app.com
-📍 Country: Turkey
-
----
-
-*This Privacy Policy has been prepared in compliance with Apple App Store Review Guidelines (Section 5.1 — Privacy), Google Play Developer Policy (User Data policy), Turkish Personal Data Protection Law No. 6698 (KVKK), and GDPR principles.*
+<div class="container">
+
+    <!-- Disclaimer -->
+    <div class="disclaimer">
+        <h3>⚠️ Important Legal Disclaimer</h3>
+        <p><strong>Privy is not a medical device.</strong></p>
+        <p>The personality analyses, archetypes, social comparisons, and results provided through this application are intended solely for <strong>entertainment, social interaction, and personal awareness</strong> purposes. The application's content does not substitute for professional psychological counseling, clinical diagnosis, treatment, or medical advice and should not be used for such purposes.</p>
+        <p>Privy is a platform where users share their <em>subjective opinions</em> about people in their social circles and engage in "social discovery" through algorithmic patterns.</p>
+    </div>
+
+    <hr>
+
+    <!-- Section 1 -->
+    <h2>1. Introduction</h2>
+    <p>Privy ("Application", "we", "us", "our") is a social discovery and interaction platform developed by Barış Altın, designed to help people discover the characteristics they are curious about regarding people in their social circles, share their impressions of each other, and transform relationship dynamics into an entertaining, viral experience. This Privacy Policy explains how your personal data is collected, processed, stored, shared, and protected when you use the Application.</p>
+    <p>This Privacy Policy has been prepared in compliance with the Turkish Personal Data Protection Law No. 6698 (KVKK), the principles of the European Union General Data Protection Regulation (GDPR), Apple App Store Review Guidelines (Section 5.1), and Google Play Developer Policy (User Data policy) requirements.</p>
+    <p>By using the Application, you represent that you have read, understood, and accepted this Privacy Policy.</p>
+
+    <hr>
+
+    <!-- Section 2 -->
+    <h2>2. Data Controller</h2>
+    <p><strong>Data Controller:</strong> Barış Altın<br>
+    📧 Email: <a href="mailto:privacy@privy-app.com">privacy@privy-app.com</a><br>
+    📍 Country: Turkey</p>
+    <p>You may contact us using the information above for any questions, requests, or complaints regarding the processing of your personal data.</p>
+
+    <hr>
+
+    <!-- Section 3 -->
+    <h2>3. Data Collected</h2>
+
+    <h3>3.1 Data Collected Directly from You</h3>
+    <table>
+        <thead>
+            <tr><th>Data Category</th><th>Data Collected</th><th>Purpose</th></tr>
+        </thead>
+        <tbody>
+            <tr><td><strong>Account Information</strong></td><td>Name/surname, email address, profile photo (via Google or Apple Sign-In)</td><td>Account creation and authentication</td></tr>
+            <tr><td><strong>Profile Information</strong></td><td>Display name, profile photo (optional change), friend code</td><td>In-app profile and social features</td></tr>
+            <tr><td><strong>Personality Analysis Data</strong></td><td><strong>Analysis Subject Label:</strong> A symbolic nickname or label assigned by the User in their own mind to identify the analysis account (This data is not based on a real person's identity verification).<br><strong>Trait Ratings:</strong> Subjective evaluation scores ranging from 1-20.</td><td>Creating personality analysis reports and profile differentiation</td></tr>
+            <tr><td><strong>Circle Data</strong></td><td>Circle connections, friend code sharing, mutual/transparent analysis preferences</td><td>Social connection and circle features</td></tr>
+            <tr><td><strong>Partner Matching Data</strong></td><td>Invitation codes, invitation statuses, matching information</td><td>Partner matching feature</td></tr>
+            <tr><td><strong>Discovery Data</strong></td><td>Answers to daily discovery questions, streak tracking</td><td>Enriching analysis profiles</td></tr>
+            <tr><td><strong>Notification Preferences</strong></td><td>Push notification permission, notification token</td><td>Notification services</td></tr>
+            <tr><td><strong>Reporting Data</strong></td><td>Reported content, report reason, description</td><td>Content moderation and user safety</td></tr>
+            <tr><td><strong>Purchase Data</strong></td><td>Credit purchase history, transaction records</td><td>Credit system management</td></tr>
+        </tbody>
+    </table>
+
+    <h3>3.2 Automatically Collected Data</h3>
+    <table>
+        <thead>
+            <tr><th>Data Category</th><th>Data Collected</th><th>Purpose</th></tr>
+        </thead>
+        <tbody>
+            <tr><td><strong>Device Identifiers</strong></td><td>IDFV (iOS) or Android ID, platform information (iOS/Android)</td><td>Preventing welcome bonus abuse</td></tr>
+            <tr><td><strong>Application Usage Data</strong></td><td>Session duration, feature usage frequency, error logs</td><td>Improving service quality</td></tr>
+            <tr><td><strong>IP Address</strong></td><td>Connection IP address (in server logs)</td><td>Security and abuse prevention</td></tr>
+        </tbody>
+    </table>
+
+    <h3>3.3 Data We Do Not Collect</h3>
+    <p>For the sake of transparency, we <strong>do not collect</strong> the following data:</p>
+    <ul>
+        <li>❌ Location data (GPS, Wi-Fi location detection, etc.)</li>
+        <li>❌ Contacts/address book information</li>
+        <li>❌ Call history or message contents</li>
+        <li>❌ Health data</li>
+        <li>❌ Financial information (credit card numbers, etc. — payment processing is managed by Apple/Google)</li>
+        <li>❌ <strong>Medical and Biometric Data:</strong> Fingerprints, face scans, genetic data, or clinical health records are not collected. Personality analysis data is processed under the "User Content" category without any medical diagnostic purpose.</li>
+        <li>❌ <strong>Political, Philosophical, and Religious Data:</strong> Special categories of personal data such as race, ethnicity, political opinion, philosophical belief, religion, sect or other beliefs, attire, association, foundation, or union membership are not collected. Analysis results do not profile based on these categories.</li>
+        <li>❌ <strong>Third-Party SDKs for Advertising Purposes:</strong> The Application does not contain SDKs for ad display, behavioral tracking, or ad targeting (e.g., AdMob, Facebook Ads, Unity Ads). (Note: Services used for authentication, database, and technical infrastructure — Supabase, Expo, Google/Apple Auth — are excluded from this scope and are listed in the "Service Providers" section).</li>
+    </ul>
+
+    <hr>
+
+    <!-- Section 4 -->
+    <h2>4. Purposes and Legal Bases for Data Processing</h2>
+
+    <h3>4.1 Processing Purposes</h3>
+    <p>We process your personal data for the following purposes:</p>
+    <table>
+        <thead>
+            <tr><th>Purpose</th><th>Description</th><th>Legal Basis</th></tr>
+        </thead>
+        <tbody>
+            <tr><td><strong>Service Provision</strong></td><td>Creating personality analysis reports, circle features, partner matching</td><td>Performance of contract</td></tr>
+            <tr><td><strong>Account Management</strong></td><td>Account creation, authentication, profile management</td><td>Performance of contract</td></tr>
+            <tr><td><strong>Security</strong></td><td>Detecting fake accounts, preventing welcome bonus abuse, blocking system</td><td>Legitimate interest</td></tr>
+            <tr><td><strong>Content Moderation</strong></td><td>Reviewing reported content, ensuring compliance with community rules</td><td>Legitimate interest / Legal obligation</td></tr>
+            <tr><td><strong>Notifications</strong></td><td>Mutual analysis results, circle requests, achievement notifications</td><td>Explicit consent</td></tr>
+            <tr><td><strong>Improvement</strong></td><td>Improving service quality and user experience (analysis with anonymized data)</td><td>Legitimate interest</td></tr>
+            <tr><td><strong>Legal Obligations</strong></td><td>Legal regulations and requests from authorized bodies</td><td>Legal obligation</td></tr>
+        </tbody>
+    </table>
+
+    <h3>4.2 Algorithmic Data Processing</h3>
+    <p>Privy processes the rating data entered by Users to create personality analysis reports. In this process:</p>
+    <ul>
+        <li><strong>Input data:</strong> Personality trait ratings containing the User's (the rater's) own <strong>subjective opinions</strong>, individual judgments, and personal evaluations of the analyzed person.</li>
+        <li><strong>Output:</strong> Algorithmically generated personality analysis report (patterns, overall score, grade, archetype).</li>
+        <li><strong>Algorithm Method:</strong> Analysis results are produced by a pattern recognition system based on predefined algorithms and rules.</li>
+        <li><strong>Data sharing:</strong> Rating data is <strong>not sent</strong> to third-party artificial intelligence systems. All analysis operations are securely performed on our own servers.</li>
+        <li><strong>Automated Decision-Making:</strong> The data processing procedure is fully automated, and there is no human intervention or manual review of the results.</li>
+    </ul>
+    <p><strong>Important:</strong> Analysis results generated by algorithmic systems are for entertainment purposes and do not constitute a scientific assessment.</p>
+
+    <hr>
+
+    <!-- Section 5 -->
+    <h2>5. Data Sharing</h2>
+
+    <h3>5.1 When Data Is Shared</h3>
+    <p>We <strong>do not share</strong> your personal data with third parties except in the following circumstances:</p>
+    <table>
+        <thead>
+            <tr><th>Sharing Scenario</th><th>Description</th></tr>
+        </thead>
+        <tbody>
+            <tr><td><strong>In-App Sharing</strong></td><td>Mutual or transparent analysis results are shared only with the relevant Circle members. This sharing depends on your preferences (transparent/mutual mode selection).</td></tr>
+            <tr><td><strong>Infrastructure and Server Services</strong></td><td>Supabase (Database) and Expo (Notification Service). To ensure uninterrupted service delivery on a global scale, your data may be stored in encrypted form on secure cloud servers located abroad (EU or US) that maintain high security standards. By using the Application, you are deemed to have consented to this technical transfer.</td></tr>
+            <tr><td><strong>Authentication Providers</strong></td><td>Google Sign-In and Apple Sign-In are used for authentication purposes. Only the minimum necessary information (authentication token) is shared with these providers.</td></tr>
+            <tr><td><strong>Legal Requirement</strong></td><td>We may be required to share your data pursuant to applicable laws, court orders, or requests from authorized bodies.</td></tr>
+            <tr><td><strong>Transfer of Rights</strong></td><td>In the event of a company merger, acquisition, or asset sale, your personal data may be transferred to the acquiring party. Prior notice will be provided in such cases.</td></tr>
+        </tbody>
+    </table>
+
+    <h3>5.2 What We Never Share</h3>
+    <ul>
+        <li>❌ We <strong>do not sell</strong> your data to third-party advertisers or data brokers.</li>
+        <li>❌ We <strong>do not share</strong> your data with third parties for marketing purposes.</li>
+        <li>❌ We <strong>do not provide</strong> your data to third-party AI or data sets.</li>
+        <li>❌ We <strong>do not publicly publish</strong> your profile data without your explicit consent.</li>
+    </ul>
+
+    <hr>
+
+    <!-- Section 6 -->
+    <h2>6. Data Retention</h2>
+
+    <h3>6.1 Retention Periods</h3>
+    <table>
+        <thead>
+            <tr><th>Data Type</th><th>Retention Period</th></tr>
+        </thead>
+        <tbody>
+            <tr><td><strong>Account Data</strong></td><td>For as long as the account exists. (Data is retained for service continuity unless the User requests account deletion).</td></tr>
+            <tr><td><strong>Analysis Data</strong></td><td>For as long as the account exists. (Immediately destroyed when the User deletes the report or account).</td></tr>
+            <tr><td><strong>Circle Data</strong></td><td>For as long as the connection is active (deleted when the connection or account is deleted)</td></tr>
+            <tr><td><strong>Device Fingerprints</strong></td><td>For as long as the account exists and, in cases of suspected fraud, for the duration of the legal statute of limitations (10 years).</td></tr>
+            <tr><td><strong>Reporting Data</strong></td><td>For as long as the account is active and for the duration of the legal dispute statute of limitations (10 years)</td></tr>
+            <tr><td><strong>Transaction Records</strong></td><td>10 years pursuant to legal requirements and tax regulations</td></tr>
+            <tr><td><strong>Server Logs</strong></td><td>90 days</td></tr>
+        </tbody>
+    </table>
+
+    <h3>6.2 Post-Retention</h3>
+    <p>Data that has exceeded its retention period is permanently deleted automatically or within 30 days at the latest, or anonymized in an irreversible manner.</p>
+
+    <hr>
+
+    <!-- Section 7 -->
+    <h2>7. Data Security</h2>
+    <p>We implement the following technical and administrative measures to ensure the security of your personal data:</p>
+
+    <h3>7.1 Technical Measures</h3>
+    <ul>
+        <li><strong>Encryption:</strong> All data communication is encrypted with TLS 1.2+ (HTTPS). Sensitive data is encrypted server-side with AES-256.</li>
+        <li><strong>Authentication:</strong> Secure session management based on JWT (JSON Web Token).</li>
+        <li><strong>Access Control:</strong> Row Level Security (RLS) ensures each User can only access their own data.</li>
+        <li><strong>API Security:</strong> All API requests are subject to authentication.</li>
+    </ul>
+
+    <h3>7.2 Administrative Measures</h3>
+    <ul>
+        <li>Data access is limited to personnel who require it for their duties.</li>
+        <li>Regular security audits and updates are conducted.</li>
+        <li>In the event of a data breach, affected Users and authorized bodies are notified within the time period required by law.</li>
+    </ul>
+
+    <h3>7.3 Data Breach Notification</h3>
+    <p>In the event that a security breach affecting your personal data is detected:</p>
+    <ul>
+        <li>The relevant data protection authority will be notified within 72 hours of discovering the breach.</li>
+        <li>Affected Users will be notified as soon as possible via email and/or in-app notification.</li>
+        <li>The scope of the breach, measures taken, and recommended protective steps will be communicated.</li>
+    </ul>
+
+    <hr>
+
+    <!-- Section 8 -->
+    <h2>8. User Rights</h2>
+
+    <h3>8.1 Your Rights Under KVKK</h3>
+    <p>You have the following rights pursuant to Article 11 of the Turkish Personal Data Protection Law No. 6698 (KVKK):</p>
+    <ol>
+        <li><strong>Right to Information:</strong> To learn whether your personal data is being processed.</li>
+        <li><strong>Right of Access:</strong> To request information regarding the processing of your personal data.</li>
+        <li><strong>Right to Rectification:</strong> To request the correction of personal data if it has been processed incompletely or inaccurately.</li>
+        <li><strong>Right to Erasure/Destruction:</strong> To request the deletion or destruction of your personal data when the purpose for processing no longer exists.</li>
+        <li><strong>Right to Object:</strong> To object to results that arise against you through the exclusive analysis of processed data via automated systems.</li>
+        <li><strong>Right to Compensation:</strong> To seek compensation for damages arising from the unlawful processing of personal data.</li>
+        <li><strong>Right to Data Portability:</strong> To receive your personal data in a structured, commonly used, and machine-readable format.</li>
+    </ol>
+
+    <h3>8.2 Additional Rights Under GDPR (EU/EEA Users)</h3>
+    <p>Additional rights for users residing in the European Union or European Economic Area:</p>
+    <ul>
+        <li><strong>Right to Restrict Processing:</strong> To restrict the processing of your data under certain conditions.</li>
+        <li><strong>Right to Object:</strong> To object to data processing based on legitimate interests.</li>
+        <li><strong>Right to Object to Profiling:</strong> To object to automated decision-making and profiling.</li>
+        <li><strong>Right to Lodge a Complaint:</strong> To file a complaint with the data protection authority in your country.</li>
+    </ul>
+
+    <h3>8.3 How to Exercise Your Rights</h3>
+    <p>To exercise the rights listed above:</p>
+    <ul>
+        <li><strong>In-App:</strong> You can permanently delete your account and all your data through Settings &gt; Account &gt; "Delete My Account."</li>
+        <li><strong>Email:</strong> You may apply to <a href="mailto:privacy@privy-app.com">privacy@privy-app.com</a>. Your application will be responded to within 30 days at the latest.</li>
+    </ul>
+    <p>We may request additional information for identity verification purposes.</p>
+
+    <hr>
+
+    <!-- Section 9 -->
+    <h2>9. Account Deletion and Data Removal</h2>
+
+    <h3>9.1 Account Deletion</h3>
+    <p>You can delete your account at any time from within the Application:</p>
+    <p><strong>Settings &gt; Account &gt; Delete My Account</strong></p>
+
+    <h3>9.2 Scope of Deletion</h3>
+    <p>When you delete your account, the following data is <strong>permanently deleted</strong>:</p>
+    <ul>
+        <li>✅ Your profile information (name, photo, friend code)</li>
+        <li>✅ All personality analyses and ratings you have created</li>
+        <li>✅ Your Circle connections and Circle analysis data</li>
+        <li>✅ Your discovery answers and streak data</li>
+        <li>✅ Your achievement progress</li>
+        <li>✅ Your notification history</li>
+        <li>✅ Your credit balance</li>
+    </ul>
+
+    <h3>9.3 Data Retained After Deletion</h3>
+    <p>The following data may be retained for a limited period for legitimate purposes:</p>
+    <ul>
+        <li><strong>Device fingerprint:</strong> To prevent bonus abuse (anonymous device identifier only).</li>
+        <li><strong>Transaction records:</strong> Due to legal requirements (financial audit).</li>
+        <li><strong>Reporting data:</strong> Until active reviews are completed.</li>
+    </ul>
+
+    <h3>9.4 Deletion Timeline</h3>
+    <p>Your data will be permanently deleted within 30 days after receiving your account deletion request. If you wish to recover your account within this period, you can contact us via email.</p>
+
+    <hr>
+
+    <!-- Section 10 -->
+    <h2>10. Children's Privacy</h2>
+
+    <h3>10.1 Age Restriction</h3>
+    <p>Privy is designed for users over the age of 13. We do not knowingly collect personal data from children under the age of 13.</p>
+
+    <h3>10.2 Detection of Child Data</h3>
+    <p>If we discover that we have collected personal data from a user under the age of 13:</p>
+    <ul>
+        <li>The relevant account will be immediately suspended.</li>
+        <li>All collected data will be deleted as soon as possible.</li>
+        <li>The legal guardian or custodian will be notified if available.</li>
+    </ul>
+
+    <h3>10.3 Parent/Guardian Notification</h3>
+    <p>If you believe your child is under the age of 13 and is using the Application, please immediately contact us at <a href="mailto:privacy@privy-app.com">privacy@privy-app.com</a>.</p>
+
+    <hr>
+
+    <!-- Section 11 -->
+    <h2>11. International Data Transfers</h2>
+
+    <h3>11.1 Data Processing Location</h3>
+    <p>Your data is processed through the Supabase infrastructure. Supabase servers may be located in different regions. When your data is processed outside of Turkey, we ensure that appropriate security measures are in place.</p>
+
+    <h3>11.2 Security Measures</h3>
+    <p>For international data transfers:</p>
+    <ul>
+        <li>Implementation of Standard Contractual Clauses (SCCs)</li>
+        <li>Ensuring an adequate level of data protection</li>
+        <li>Compliance with KVKK and applicable data protection legislation</li>
+    </ul>
+
+    <hr>
+
+    <!-- Section 12 -->
+    <h2>12. Cookies and Tracking Technologies</h2>
+
+    <h3>12.1 Mobile Application</h3>
+    <p>Privy is a mobile application and does not use traditional web cookies. However, we may use the following similar technologies:</p>
+    <ul>
+        <li><strong>Device Identifiers:</strong> IDFV (iOS) or Android ID — to prevent welcome bonus abuse.</li>
+        <li><strong>Push Token:</strong> Expo push notification token — to send notifications.</li>
+        <li><strong>Session Tokens:</strong> JWT-based secure session management. (These tokens are mandatory technical identifiers solely for the Application's operation and your security; they do not serve tracking or advertising purposes). — for secure authentication.</li>
+    </ul>
+
+    <h3>12.2 Third-Party Tracking</h3>
+    <p>Privy <strong>does not use</strong> third-party ad tracking SDKs (Facebook SDK, Google Ads SDK, etc.). We do not track your user behavior for advertising purposes and do not collect your advertising identifier (IDFA/GAID).</p>
+
+    <hr>
+
+    <!-- Section 13 -->
+    <h2>13. Push Notifications</h2>
+
+    <h3>13.1 Notification Types</h3>
+    <p>Privy may send push notifications in the following situations:</p>
+    <ul>
+        <li>When someone sends you a Circle request</li>
+        <li>When mutual analysis results are revealed</li>
+        <li>When your transparent analysis result is ready</li>
+        <li>When a new discovery question is available</li>
+        <li>Streak reminders</li>
+    </ul>
+
+    <h3>13.2 Notification Control</h3>
+    <p>You can manage push notification permissions at any time from your device settings:</p>
+    <ul>
+        <li><strong>iOS:</strong> Settings &gt; Notifications &gt; Privy</li>
+        <li><strong>Android:</strong> Settings &gt; Apps &gt; Privy &gt; Notifications</li>
+    </ul>
+    <p>Disabling notifications does not affect the core functionality of the Application.</p>
+
+    <hr>
+
+    <!-- Section 14 -->
+    <h2>14. Apple and Google Specific Privacy Requirements</h2>
+
+    <h3>14.1 Apple App Tracking Transparency (ATT)</h3>
+    <p>Privy <strong>does not engage in tracking</strong> under Apple's ATT framework. We do not access your device's advertising identifier (IDFA) and do not perform cross-app/website tracking.</p>
+
+    <h3>14.2 Apple Privacy Nutrition Label</h3>
+    <p>Our privacy label on the App Store reflects the following data collection categories:</p>
+    <ul>
+        <li><strong>Data Linked to You:</strong> Contact information (email), user content (analyses), identifiers (user ID)</li>
+        <li><strong>Data Not Linked to You:</strong> Device identifiers (abuse prevention), usage data (anonymous error reports)</li>
+    </ul>
+
+    <h3>14.3 Google Play Data Safety</h3>
+    <p>Our data safety section on the Google Play Store includes the following information:</p>
+    <ul>
+        <li><strong>Data Collection:</strong> Yes — account information, user content, device information</li>
+        <li><strong>Data Sharing:</strong> No — data is not shared with third parties for marketing purposes</li>
+        <li><strong>Data Deletion:</strong> Yes — users can delete their accounts and data from within the app</li>
+        <li><strong>Encryption:</strong> Yes — encryption in transit (TLS)</li>
+    </ul>
+
+    <hr>
+
+    <!-- Section 15 -->
+    <h2>15. Third-Party Service Providers</h2>
+    <p>We work with the following third-party service providers, and these providers may interact with your data:</p>
+    <table>
+        <thead>
+            <tr><th>Provider</th><th>Purpose</th><th>Data Processed</th><th>Privacy Policy</th></tr>
+        </thead>
+        <tbody>
+            <tr><td><strong>Supabase</strong></td><td>Database, authentication, server functions</td><td>Account information, analysis data, application data</td><td><a href="https://supabase.com/privacy">supabase.com/privacy</a></td></tr>
+            <tr><td><strong>Google Sign-In</strong></td><td>Authentication</td><td>Google account token, name, email</td><td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
+            <tr><td><strong>Apple Sign-In</strong></td><td>Authentication</td><td>Apple ID token, name, email (hiding option available)</td><td><a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></td></tr>
+            <tr><td><strong>Expo</strong></td><td>Push notifications, application distribution</td><td>Push token, device information</td><td><a href="https://expo.dev/privacy">expo.dev/privacy</a></td></tr>
+        </tbody>
+    </table>
+    <p>These providers process your data solely for the stated purposes and are subject to their own privacy policies.</p>
+    <div class="note-box">
+        <strong>Note:</strong> The service providers listed above act as <strong>Data Processors</strong> and process your data solely in accordance with our instructions, under contractual data protection safeguards (DPA).
+    </div>
+
+    <hr>
+
+    <!-- Section 16 -->
+    <h2>16. Data Protection Impact Assessment</h2>
+    <p>When adding new features or data processing activities, we conduct a Data Protection Impact Assessment (DPIA) to evaluate potential privacy risks. This assessment covers:</p>
+    <ul>
+        <li>New data collection requirements</li>
+        <li>Data processing purposes and proportionality</li>
+        <li>Potential impacts on user rights</li>
+        <li>Risk mitigation measures</li>
+    </ul>
+
+    <hr>
+
+    <!-- Section 17 -->
+    <h2>17. Request Response Time</h2>
+    <p>Response times for personal data requests:</p>
+    <table>
+        <thead>
+            <tr><th>Request Type</th><th>Response Time</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Information / Access</td><td>Within 30 days at the latest</td></tr>
+            <tr><td>Rectification</td><td>Within 30 days at the latest</td></tr>
+            <tr><td>Deletion (in-app)</td><td>Immediate (permanent deletion within 30 days)</td></tr>
+            <tr><td>Deletion (email request)</td><td>Within 30 days at the latest</td></tr>
+            <tr><td>Objection</td><td>Within 30 days at the latest</td></tr>
+            <tr><td>Data portability</td><td>Within 30 days at the latest</td></tr>
+        </tbody>
+    </table>
+    <p>In the case of complex or numerous requests, we may extend this period up to 60 days, provided we inform you.</p>
+
+    <hr>
+
+    <!-- Section 18 -->
+    <h2>18. Policy Changes</h2>
+    <p>We may update this Privacy Policy from time to time. In the event of significant changes:</p>
+    <ul>
+        <li>We will send an in-app notification.</li>
+        <li>We will specify the effective date of the updated policy.</li>
+        <li>We will highlight and explain significant changes.</li>
+    </ul>
+    <p>Your continued use of the Application after the changes constitutes acceptance of the updated Privacy Policy.</p>
+
+    <hr>
+
+    <!-- Section 19 -->
+    <h2>19. Complaints and Applications</h2>
+
+    <h3>19.1 Contact Us</h3>
+    <p>For all complaints and applications regarding the processing of your personal data:</p>
+    <p>📧 <strong>Email:</strong> <a href="mailto:privacy@privy-app.com">privacy@privy-app.com</a></p>
+    <p>All applications will be responded to within 30 days at the latest.</p>
+
+    <h3>19.2 Supervisory Authority</h3>
+    <p>If the outcome of your application is not satisfactory, you may apply to the following authorities:</p>
+    <ul>
+        <li><strong>Turkey:</strong> Personal Data Protection Authority (KVKK) — <a href="https://www.kvkk.gov.tr">kvkk.gov.tr</a></li>
+        <li><strong>EU/EEA:</strong> The Data Protection Authority in your country</li>
+    </ul>
+
+    <hr>
+
+    <!-- Section 20 -->
+    <h2>20. Contact</h2>
+    <p>If you have any questions, concerns, or requests regarding this Privacy Policy:</p>
+    <p><strong>Barış Altın</strong><br>
+    📧 Email: <a href="mailto:privacy@privy-app.com">privacy@privy-app.com</a><br>
+    📍 Country: Turkey</p>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>© 2026 Barış Altın — Privy</p>
+        <p class="compliance">This Privacy Policy has been prepared in compliance with Apple App Store Review Guidelines (Section 5.1 — Privacy), Google Play Developer Policy (User Data policy), Turkish Personal Data Protection Law No. 6698 (KVKK), and GDPR principles.</p>
+    </div>
+
+</div>
+
+</body>
+</html>
